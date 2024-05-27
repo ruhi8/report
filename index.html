@@ -3,754 +3,597 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PDA Forms</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    <title>Report Shift</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-    <style>
-      .-z-1 {
-        z-index: -1;
-      }
-      .origin-0 {
-        transform-origin: 0%;
-      }
-      input:focus ~ label,
-      input:not(:placeholder-shown) ~ label,
-      textarea:focus ~ label,
-      textarea:not(:placeholder-shown) ~ label,
-      select:focus ~ label,
-      select:not([value=""]):valid ~ label {
-        --tw-translate-x: 0;
-        --tw-translate-y: 0;
-        --tw-rotate: 0;
-        --tw-skew-x: 0;
-        --tw-skew-y: 0;
-        transform: translateX(var(--tw-translate-x))
-          translateY(var(--tw-translate-y)) rotate(var(--tw-rotate))
-          skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-          scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-        --tw-scale-x: 0.75;
-        --tw-scale-y: 0.75;
-        --tw-translate-y: -1.5rem;
-      }
-      input:focus ~ label,
-      select:focus ~ label {
-        --tw-text-opacity: 1;
-        color: rgba(0, 0, 0, var(--tw-text-opacity));
-        left: 0px;
-      }
-    </style>
+    />
   </head>
   <body>
-    <div class="min-h-screen bg-gray-100 p-0 sm:p-12">
-      <div
-        class="mx-auto max-w-md px-6 py-12 bg-white border-0 shadow-lg sm:rounded-3xl"
-      >
-        <h1 class="text-2xl font-bold mb-8">PDA 1A</h1>
-        <form id="form" name="rekap_shift" novalidate>
-          <!-- Other PDA 1A Fields -->
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu1a_vag"
-              placeholder=" "
-              required
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu1a_vag"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 1A - Vag</label
+    <p class="fs-1 fw-bold text-center">REPORT SHIFT KBS</p>
+    <div class="container mb-4">
+      <form name="report" id="form">
+        <div class="row row-cols-2">
+          <!--pertama-->
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger"
             >
-            <span class="text-sm text-red-600 hidden" id="1a_vag"
-              >PDU 1A - Vag is required</span
-            >
+              PDU 1A
+            </p>
+            <!--form-->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1A-Vag</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1a_vag"
+                placeholder="PDU 1A-Vag"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1A-Iavg</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1a_1avg"
+                placeholder="PDU 1A-Iavg"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1A-P tot</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1a_ptot"
+                placeholder="PDU 1A-P tot"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1A-E del</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1a_edel"
+                placeholder="PDU 1A-E del"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1A-ia</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1a_ia"
+                placeholder="PDU 1A-ia"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1A-ib</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1a_ib"
+                placeholder="PDU 1A-ib"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1A-ic</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1a_ic"
+                placeholder="PDU 1A-ic"
+                required
+              />
+            </div>
           </div>
-          <!-- Other PDA 1A Fields -->
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu1a_iavg"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu1a_iavg"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 1A - Iavg</label
+          <!--akhir pertama-->
+          <!--kedua-->
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger"
             >
-            <span class="text-sm text-red-600 hidden" id="1a_iavg"
-              >PDU 1A - Iavg is required</span
-            >
+              PDU 2A
+            </p>
+            <!--form-->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2A-Vag</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2a_vag"
+                placeholder="PDU 2A-Vag"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2A-Iavg</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2a_1avg"
+                placeholder="PDU 2A-Iavg"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2A-P tot</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2a_ptot"
+                placeholder="PDU 2A-P tot"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2A-E del</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2a_edel"
+                placeholder="PDU 2A-E del"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2A-ia</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2a_ia"
+                placeholder="PDU 2A-ia"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2A-ib</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2a_ib"
+                placeholder="PDU 2A-ib"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2A-ic</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2a_ic"
+                placeholder="PDU 2A-ic"
+                required
+              />
+            </div>
           </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu1a_ptot"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu1a_ptot"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 1A P tot</label
+          <!--akhir kedua-->
+          <!--ketiga-->
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger"
             >
-            <span class="text-sm text-red-600 hidden" id="1a_ptot"
-              >PDU 1A P tot is required</span
-            >
+              PDU 1B
+            </p>
+            <!--form-->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1B-Vag</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1b_vag"
+                placeholder="PDU 1B-Vag"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1B-Iavg</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1b_1avg"
+                placeholder="PDU 1B-Iavg"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1B-P tot</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1a_ptot"
+                placeholder="PDU 1B-P tot"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1B-E del</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1b_edel"
+                placeholder="PDU 1B-E del"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1B-ia</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1b_ia"
+                placeholder="PDU 1B-ia"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1B-ib</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1b_ib"
+                placeholder="PDU 1B-ib"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1B-ic</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1b_ic"
+                placeholder="PDU 1B-ic"
+                required
+              />
+            </div>
           </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu1a_edel"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu1a_edel"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 1A E del</label
+          <!--akhir ketiga-->
+          <!--ke empat-->
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger"
             >
-            <span class="text-sm text-red-600 hidden" id="1a_edel"
-              >PDU 1A E del is required</span
-            >
+              PDU 2B
+            </p>
+            <!--form-->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2B-Vag</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2b_vag"
+                placeholder="PDU 2B-Vag"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2B-Iavg</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2b_1avg"
+                placeholder="PDU 2B-Iavg"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2B-P tot</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2b_ptot"
+                placeholder="PDU 2B-P tot"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2B-E del</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2b_edel"
+                placeholder="PDU 2B-E del"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2B-ia</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2b_ia"
+                placeholder="PDU 2B-ia"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2B-ib</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2b_ib"
+                placeholder="PDU 2B-ib"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2B-ic</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2b_ic"
+                placeholder="PDU 2B-ic"
+                required
+              />
+            </div>
           </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu1a_ia"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu1a_ia"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 1A - Ia</label
+          <!--Akhir ke empat-->
+        </div>
+        <!--MSB-->
+        <div class="row row-cols-3">
+          <!--pertama-->
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger"
             >
-            <span class="text-sm text-red-600 hidden" id="1a_ia"
-              >PDU 1A - Ia is required</span
-            >
+              MSB A
+            </p>
+            <!--form-->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB A-Vag</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msba_vag"
+                placeholder="MSB A-Vag"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB A-Iavg</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msba_1avg"
+                placeholder="MSB A-Iavg"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB A-P tot</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msba_ptot"
+                placeholder="MSB A-P tot"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB A-E del</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msba_edel"
+                placeholder="MSB A-E del"
+                required
+              />
+            </div>
           </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu1a_ib"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu1a_ib"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 1A - Ib</label
+          <!--akhir pertama-->
+          <!--kedua-->
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger"
             >
-            <span class="text-sm text-red-600 hidden" id="1a_ib"
-              >PDU 1A - Ib is required</span
-            >
+              MSB B
+            </p>
+            <!--form-->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB B-Vag</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msbb_vag"
+                placeholder="MSB B-Vag"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB B-Iavg</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msbb_1avg"
+                placeholder="MSB B-Iavg"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB B-P tot</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msbb_ptot"
+                placeholder="MSB B-P tot"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB B-E del</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msbb_edel"
+                placeholder="MSB C-E del"
+                required
+              />
+            </div>
           </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu1a_ic"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu1a_ic"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 1A - Ic</label
+          <!--akhir kedua-->
+          <!--ketiga-->
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger"
             >
-            <span class="text-sm text-red-600 hidden" id="1a_ic"
-              >PDU 1A - Ic is required</span
-            >
+              MSB C
+            </p>
+            <!--form-->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB C-Vag</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msbc_vag"
+                placeholder="MSB C-Vag"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB C-Iavg</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msbc_1avg"
+                placeholder="MSB C-Iavg"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB C-P tot</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msbc_ptot"
+                placeholder="MSB C-P tot"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB C-E del</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msbc_edel"
+                placeholder="MSB C-E del"
+                required
+              />
+            </div>
           </div>
-          <!-- Add other fields for PDA 1A here -->
-          <h1 class="text-2xl font-bold mb-8 mt-12">PDA 2A</h1>
-          <!-- PDA 2A Form Fields -->
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu2a_vag"
-              placeholder=" "
-              required
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_vag"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 2A - Vag</label
-            >
-            <span class="text-sm text-red-600 hidden" id="2a_vag"
-              >PDU 2A - Vag is required</span
-            >
-          </div>
-          <!-- Other PDA 2A Fields -->
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu2a_iavg"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_iavg"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 2A - Iavg</label
-            >
-            <span class="text-sm text-red-600 hidden" id="2a_iavg"
-              >PDU 2A - Iavg is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu2a_ptot"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_ptot"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 2A P tot</label
-            >
-            <span class="text-sm text-red-600 hidden" id="2a_ptot"
-              >PDU 2A P tot is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu2a_edel"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_edel"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 2A E del</label
-            >
-            <span class="text-sm text-red-600 hidden" id="2a_edel"
-              >PDU 2A E del is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu2a_ia"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_ia"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 2A - Ia</label
-            >
-            <span class="text-sm text-red-600 hidden" id="2a_ia"
-              >PDU 2A - Ia is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu2a_ib"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_ib"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 2A - Ib</label
-            >
-            <span class="text-sm text-red-600 hidden" id="2a_ib"
-              >PDU 2A - Ib is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu2a_ic"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_ic"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 2A - Ic</label
-            >
-            <span class="text-sm text-red-600 hidden" id="2a_ic"
-              >PDU 2A - Ic is required</span
-            >
-          </div>
-          <!-- Add other fields for PDA 2A here -->
-
-          <h1 class="text-2xl font-bold mb-8 mt-12">PDA 1B</h1>
-          <!-- PDA 1B Form Fields -->
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu1b_vag"
-              placeholder=" "
-              required
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu1b_vag"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 1B - Vag</label
-            >
-            <span class="text-sm text-red-600 hidden" id="1b_vag"
-              >PDU 1B - Vag is required</span
-            >
-          </div>
-          <!-- Other PDA 1B Fields -->
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu1b_iavg"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu1b_iavg"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 1B - Iavg</label
-            >
-            <span class="text-sm text-red-600 hidden" id="1b_iavg"
-              >PDU 1B - Iavg is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu1b_ptot"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_ptot"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 1B P tot</label
-            >
-            <span class="text-sm text-red-600 hidden" id="1b_ptot"
-              >PDU 1B P tot is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu1b_edel"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_edel"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 1B E del</label
-            >
-            <span class="text-sm text-red-600 hidden" id="1b_edel"
-              >PDU 1B E del is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu1b_ia"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_ia"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 1B - Ia</label
-            >
-            <span class="text-sm text-red-600 hidden" id="1b_ia"
-              >PDU 1B - Ia is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu1b_ib"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_ib"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 1B - Ib</label
-            >
-            <span class="text-sm text-red-600 hidden" id="1b_ib"
-              >PDU 1B - Ib is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu1b_ic"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_ic"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 1B - Ic</label
-            >
-            <span class="text-sm text-red-600 hidden" id="1b_ic"
-              >PDU 1B - Ic is required</span
-            >
-          </div>
-          <!-- Add other fields for PDA 1B here -->
-
-          <h1 class="text-2xl font-bold mb-8 mt-12">PDA 2B</h1>
-          <!-- PDA 2A Form Fields -->
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu2b_vag"
-              placeholder=" "
-              required
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_vag"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 2B - Vag</label
-            >
-            <span class="text-sm text-red-600 hidden" id="2b_vag"
-              >PDU 2B - Vag is required</span
-            >
-          </div>
-          <!-- Other PDA 2A Fields -->
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu2b_iavg"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_iavg"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 2B - Iavg</label
-            >
-            <span class="text-sm text-red-600 hidden" id="2b_iavg"
-              >PDU 2B - Iavg is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu2b_ptot"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_ptot"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 2B P tot</label
-            >
-            <span class="text-sm text-red-600 hidden" id="2b_ptot"
-              >PDU 2B P tot is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu2b_edel"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_edel"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 2B E del</label
-            >
-            <span class="text-sm text-red-600 hidden" id="2b_edel"
-              >PDU 2B E del is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu2b_ia"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_ia"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 2B - Ia</label
-            >
-            <span class="text-sm text-red-600 hidden" id="2b_ia"
-              >PDU 2B - Ia is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu2b_ib"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_ib"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 2B - Ib</label
-            >
-            <span class="text-sm text-red-600 hidden" id="2b_ib"
-              >PDU 2B - Ib is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="pdu2b_ic"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="pdu2a_ic"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >PDU 2B - Ic</label
-            >
-            <span class="text-sm text-red-600 hidden" id="2b_ic"
-              >PDU 2B - Ic is required</span
-            >
-          </div>
-          <!-- Add other fields for PDA 2B here -->
-
-          <h1 class="text-2xl font-bold mb-8 mt-12">MSB A</h1>
-          <!-- MSB A Form Fields -->
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="msba_vag"
-              placeholder=" "
-              required
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="msba_vag"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >MSB A - Vag</label
-            >
-            <span class="text-sm text-red-600 hidden" id="msba_vag"
-              >MSB A - Vag is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="msba_iavg"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="msba_iavg"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >MSB A - Iavg</label
-            >
-            <span class="text-sm text-red-600 hidden" id="msba_iavg"
-              >MSB A - Iavg is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="msba_ptot"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="msba_ptot"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >MSB A - P tot</label
-            >
-            <span class="text-sm text-red-600 hidden" id="msba_ptot"
-              >MSB A - P tot is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="msba_edel"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="msba_edel"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >MSB A - E del</label
-            >
-            <span class="text-sm text-red-600 hidden" id="msba_edel"
-              >MSB A - E del is required</span
-            >
-          </div>
-          <!-- Add other fields for MSB A here -->
-
-          <h1 class="text-2xl font-bold mb-8 mt-12">MSB B</h1>
-          <!-- MSB B Form Fields -->
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="msbb_vag"
-              placeholder=" "
-              required
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="msba_vag"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >MSB B - Vag</label
-            >
-            <span class="text-sm text-red-600 hidden" id="msbb_vag"
-              >MSB B - Vag is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="msbb_iavg"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="msba_iavg"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >MSB B - Iavg</label
-            >
-            <span class="text-sm text-red-600 hidden" id="msbb_iavg"
-              >MSB B - Iavg is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="msbb_ptot"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="msba_ptot"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >MSB B - P tot</label
-            >
-            <span class="text-sm text-red-600 hidden" id="msbb_ptot"
-              >MSB B - P tot is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="msbb_edel"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="msbb_edel"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >MSB B - E del</label
-            >
-            <span class="text-sm text-red-600 hidden" id="msbb_edel"
-              >MSB B - E del is required</span
-            >
-          </div>
-          <!-- Add other fields for MSB B here -->
-
-          <h1 class="text-2xl font-bold mb-8 mt-12">MSB C</h1>
-          <!-- MSB C Form Fields -->
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="msbc_vag"
-              placeholder=" "
-              required
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="msbc_vag"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >MSB C - Vag</label
-            >
-            <span class="text-sm text-red-600 hidden" id="msbc_vag"
-              >MSB C - Vag is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="msbc_iavg"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="msbc_iavg"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >MSB C - Iavg</label
-            >
-            <span class="text-sm text-red-600 hidden" id="msbc_iavg"
-              >MSB C - Iavg is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="msbc_ptot"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="msbc_ptot"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >MSB C - P tot</label
-            >
-            <span class="text-sm text-red-600 hidden" id="msbc_ptot"
-              >MSB C - P tot is required</span
-            >
-          </div>
-          <div class="relative z-0 w-full mb-5">
-            <input
-              type="text"
-              name="msbc_edel"
-              placeholder=" "
-              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
-            />
-            <label
-              for="msbc_edel"
-              class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-              >MSB C - E del</label
-            >
-            <span class="text-sm text-red-600 hidden" id="msbc_edel"
-              >MSB C - E del is required</span
-            >
-          </div>
-          <!-- Add other fields for MSB C here -->
-          <button
-            type="submit"
-            class="w-full px-6 py-3 mt-3 text-lg text-white bg-black hover:bg-gray-700 focus:bg-gray-700 focus:outline-none"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
+          <!--akhir ketiga-->
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto mb-4">
+          <button class="btn btn-primary" type="submit">Kirim</button>
+        </div>
+      </form>
     </div>
     <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyzb_DjvsHtgFRvQwt410uGITRFmVGVCESLy6EO1zH5cvGTpAKWSBq58DFWZFENnkDzxA/exec";
-      const form = document.forms["rekap_shift"];
-
-      form.addEventListener("submit", (e) => {
+      document.getElementById("form").addEventListener("submit", function (e) {
         e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!", response))
-          .catch((error) => console.error("Error!", error.message));
+        const form = new FormData(this);
+        fetch(
+          "https://script.google.com/macros/s/AKfycbwmFqjIMMpjlG2eAocJZiVKsojuXRsz4LuzChvB_bzQKaHOTNJ-GkHQoHEJPKg6u6km/exec",
+          {
+            method: "POST",
+            body: form,
+          }
+        )
+          .then((response) => response.text())
+          .then((data) => {
+            alert(data);
+            this.reset();
+          })
+          .catch((error) => {
+            console.error("Error!", error.message);
+          });
       });
     </script>
   </body>
